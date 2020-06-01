@@ -1,0 +1,103 @@
+{
+  "rules": [
+    {
+      "key": "96c5e6a4-d847-4b24-82e4-ac02d6d8b0b6",
+      "id": "d4a7a07b-ac46-4e37-8efe-23b3dc1d0367",
+      "priority": "high",
+      "name": "monthly rental",
+      "createdAt": "Mon Jun 01 2020",
+      "modifiedAt": "Mon Jun 01 2020",
+      "primary": [
+        {
+          "name": "monthly rental",
+          "operator": "GREATER_THAN",
+          "value": "1000",
+          "id": "3ecde1c1-d8be-4be7-8765-e7b62d00248d",
+          "dataType": "string"
+        }
+      ],
+      "secondary": [
+        {
+          "name": "customer age",
+          "operator": "LESSER_THAN",
+          "value": "21",
+          "id": "53ac4650-5259-4e2d-8c48-cc36a64ba26b",
+          "dataType": "string",
+          "baseOperator": "and"
+        }
+      ]
+    },
+    {
+      "key": "65fb224a-031a-4d7f-bbf6-600e2a12365f",
+      "id": "b9386d04-d69c-4f6a-b4a3-c211febda785",
+      "priority": "medium",
+      "name": "monthly rental and zip code",
+      "createdAt": "Mon Jun 01 2020",
+      "modifiedAt": "Mon Jun 01 2020",
+      "primary": [
+        {
+          "name": "monthly rental",
+          "operator": "GREATER_THAN",
+          "value": "400",
+          "id": "bbe936e3-85fb-40c5-88ef-aed0c3328041",
+          "dataType": "string"
+        }
+      ],
+      "secondary": [
+        {
+          "name": "zipcode",
+          "operator": "INCLUDES",
+          "value": "560102, 567892, 10020",
+          "id": "6d3042f6-8bcb-4b0a-a9dc-6492e458c609",
+          "dataType": "string",
+          "baseOperator": "and"
+        }
+      ]
+    },
+    {
+      "key": "3a636169-4161-44c2-aada-f71a766fcc60",
+      "id": "bbfea0aa-e798-4b08-b865-c3c1fa23e526",
+      "priority": "high",
+      "name": "month rental and tv",
+      "createdAt": "Mon Jun 01 2020",
+      "modifiedAt": "Mon Jun 01 2020",
+      "primary": [
+        {
+          "name": "monthly rental",
+          "operator": "GREATER_THAN",
+          "value": "200",
+          "id": "f9323e86-16b7-4927-8e09-63099b749d0d",
+          "dataType": "string"
+        }
+      ],
+      "secondary": [
+        {
+          "name": "order ",
+          "operator": "INCLUDES",
+          "value": "tv",
+          "id": "a19f1260-b0c0-4c51-b3f4-d4e85578bc8a",
+          "dataType": "string",
+          "baseOperator": "and"
+        }
+      ]
+    },
+    {
+      "key": "d115480d-32ca-4798-b25c-1f7814a32ec7",
+      "id": "625a0e04-fd66-4e4c-90ee-4a13260f774a",
+      "priority": "low",
+      "name": "rental tenure",
+      "createdAt": "Mon Jun 01 2020",
+      "modifiedAt": "Mon Jun 01 2020",
+      "primary": [
+        {
+          "name": "tenure",
+          "operator": "LESSER_THAN",
+          "value": "3 months",
+          "id": "4fb69ee8-8f95-414c-a564-0a52d5377d5d",
+          "dataType": "string"
+        }
+      ],
+      "secondary": []
+    }
+  ]
+}
